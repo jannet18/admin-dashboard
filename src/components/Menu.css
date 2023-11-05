@@ -56,3 +56,13 @@ menu ul li.active a::before{
     width: 20px;
     transition: all 0.3s;
 }
+.mini-menu {
+    margin-top: auto;
+}
+
+@media screen and (max-width: 525px){
+    menu {
+        min-width: 68px;
+        width: 68px;
+    }
+}

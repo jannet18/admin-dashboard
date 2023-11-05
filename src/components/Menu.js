@@ -1,8 +1,26 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import logo from '../images/logo.png';
 import { FaShoppingCart,FaWallet, FaDelicious, FaChartLine, FaRegClock, FaCog, FaSignOutAlt } from "react-icons/fa"
 
 function Menu() {
+
+  useEffect(() => {
+const mainMenu = document
+.getElementById('main-menu')
+.querySelectorAll('li');
+
+function removeActive () {
+  mainMenu.forEach(element => {
+    element.classList.remove('active');
+    this.classList.add('active');
+  });
+}
+
+mainMenu.forEach(element => {
+  element.addEventListener('click', removeActive);
+});
+
+  }, []);
   return (
 <menu>
   <img src={logo} alt=''/>
