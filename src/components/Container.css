@@ -1,0 +1,9 @@
+.container {
+    width: calc(100% - 100px);
+    /* height: 100%;
+    background-color: red; */
+    padding-top: 30px;
+}
+.top-container {
+    display: flex;
+}
