@@ -1,6 +1,6 @@
 import './App.css';
-import Menu from './components/Menu';
-import Container from './components/Container';
+import Menu from './components/Menu.js';
+import Container from './components/Container.js';
 import './components/Menu.css';
 
 function App() {

@@ -3,4 +3,5 @@
     background: #121026;
     height: 100vh;
     overflow: hidden;
+    display: flex;
 }
