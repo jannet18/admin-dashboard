@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import logo from '../images/logo.png';
+import './Menu.css';
 import { FaShoppingCart,FaWallet, FaDelicious, FaChartLine, FaRegClock, FaCog, FaSignOutAlt } from "react-icons/fa"
 
 function Menu() {

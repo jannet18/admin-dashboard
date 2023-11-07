@@ -138,3 +138,16 @@
    color: #f1f1f1;
    transform: 0.3s;
 }
+@media screen and (max-width : 525px) {
+   .container {
+    width: calc(100% - 68px);
+   } 
+   .top-container .input-box {
+    width: 120px;
+    z-index: 101;
+   }
+   .top-container .input-box input:focus {
+    width: 320px;
+    transition: width 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);;
+   }
+}
