@@ -1,5 +1,82 @@
-.MainContainer {
+.mainContainer {
     width: 100%;
     height: calc(100% - 45px);
-    background-color: bisque;
+    display: flex;
+    padding-top: 15px;
+}
+.left {
+    width: calc(100% - 30%);
+    overflow-y: scroll;
+    transition: all 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);  
+}
+.left .banner {
+    height: 260px;
+    border-radius: .5em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4) ;
+    position: relative;
+}
+.banner .text-container{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.text-container h1 {
+    font-size: 3.5em;
+    color: #f1f1f1;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.text-container h2 {
+  font-size: 2.5em;
+  color: #b1147d;
+  margin: 5px 0;  
+}
+
+.text-container p {
+    color: #f1f1f1;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.text-container .bid {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.bid p {
+    margin-left: 10px;
+}
+.bid p span {
+    display: block;
+    color:#b1147d;
+    font-weight: 600;
+}
+
+.left .cards {
+    background: #19162c;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: .5em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+
+}
+
+.cards .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+.cards .filters .popular{
+    display: flex;
+    align-items: center;
+}
+.filters .popular h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d1cfd4;
+    margin-right: 10px;
+}
+.right {
+    width: calc(100% - 70%);
 }
