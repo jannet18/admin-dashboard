@@ -1,6 +1,14 @@
 import React from 'react';
 import '../components/MainContainer.css';
 import banner from '../images/backround.jpeg';
+import CardMain from './CardMain';
+import card1 from '../images/card-1.jpeg';
+import card2 from '../images/card-2.jpeg';
+import card3 from '../images/card-3.jpeg';
+import card4 from '../images/card-4.jpeg';
+import card5 from '../images/card-5.jpeg';
+import card6 from '../images/card-6.jpeg';
+
 
 
 function MainContainer() {
@@ -37,10 +45,16 @@ function MainContainer() {
               <a href="#btn" className="button-2">Games</a>
             </div>
           </div>
+          <main>
+          <CardMain imgSrc={card1} title={"Cubic Thunder"} hearts={'65'}/>
+          <CardMain imgSrc={card2} title={"Pokeman Ball"} hearts={'55'}/>
+          <CardMain imgSrc={card3} title={"Pyramid God"} hearts={'35'}/>
+          <CardMain imgSrc={card4} title={"Stunning Cube"} hearts={'50'}/>
+          <CardMain imgSrc={card5} title={"Star Crystal"} hearts={'45'}/>
+          <CardMain imgSrc={card6} title={"Crystal Bird"} hearts={'75'}/>
+          </main>
         </div>
-        <main>
-          
-        </main>
+       
         </div>
         <div className='right '></div>
     </div>
