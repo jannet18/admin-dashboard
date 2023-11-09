@@ -33,10 +33,10 @@ menu ul li a{
 menu ul li a::before {
     position: absolute;
     content: "";
-    /* top: 2.5px; */
-    /* left: 3.5px; */
-    /* width: 0px; */
-    /* height: 20px; */
+    top: 2.5px;
+    left: 3.5px;
+    width: 0px;
+    height: 20px;
     background: #b1147d;
     border-radius: 50%;
 }

@@ -8,6 +8,8 @@ import card3 from '../images/card-3.jpeg';
 import card4 from '../images/card-4.jpeg';
 import card5 from '../images/card-5.jpeg';
 import card6 from '../images/card-6.jpeg';
+import RightTop from './RightTop';
+import RightBottom from './RightBottom';
 
 
 
@@ -54,9 +56,11 @@ function MainContainer() {
           <CardMain imgSrc={card6} title={"Crystal Bird"} hearts={'75'}/>
           </main>
         </div>
-       
         </div>
-        <div className='right '></div>
+        <div className='right'>
+          <RightTop/>
+          <RightBottom/>
+        </div>
     </div>
   )
 }
