@@ -11,7 +11,7 @@
 }
 .input-box {
     width: 350px;
-    /* max-width: 350px; */
+    max-width: 350px;
     height: 45px;
     position: relative;
 }
@@ -97,17 +97,17 @@
 .menu-chevron:hover{
     transition: transform 0.5s ease;
 }
-.menu-container {
+
+.menu-container{
     position: absolute;
     top: 50px;
-    right: 5px;
+    /* right: 10px; */
+    right: 300px;
     background: #19162c;
     border-radius: .5em;
-    width: 180px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     z-index: 1;
     transform: translateX(300px);
-    transition: transform 0.3s cubic-bezier(0.17, 0.81, 0.38, 1.39);
 }
 .menu-container:after {
     position: absolute;
@@ -119,15 +119,17 @@
     right: 15px;
     transform: rotate(45deg) ;
 }
-.menu-container ul {
+/* .menu-container ul {
     width: 100%;
     height: 100%;
-}
+} */
 .menu-container ul li {
     list-style-type: none;
-    margin: 5px 0;
-    width: 100%;
-    padding: 10px 20px;
+    margin: 5px 0px;
+    /* width: 100%; */
+    padding: 10px 15px;
+    margin-right: 30px;
+
     cursor: pointer;
     color: #757380;
     text-align: left;
@@ -136,6 +138,8 @@
    background: #121026;
    color: #f1f1f1;
    transform: 0.3s;
+   /* width: 100%; */
+   border-radius: .5em;
 }
 @media screen and (max-width : 525px) {
    .container {

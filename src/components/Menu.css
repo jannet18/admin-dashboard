@@ -4,7 +4,10 @@ menu {
     background-color: #19162c;
     display: flex;
     flex-direction: column;
+    text-align: left;
     box-shadow: 0 0 20px rgba(0, 0, 0, .4);
+    position: sticky;
+    top: 0;
 
 }  
 menu img {
@@ -32,7 +35,9 @@ menu ul li a{
 
 menu ul li a::before {
     position: absolute;
-    content: "";
+    /* content: ""; */
+    /* top: 5px; */
+    /* left: -10px; */
     top: 2.5px;
     left: 3.5px;
     width: 0px;
@@ -64,5 +69,6 @@ menu ul li.active a::before{
     menu {
         min-width: 68px;
         width: 68px;
+        /* text-align: center; */
     }
 }
