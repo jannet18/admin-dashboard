@@ -23,10 +23,10 @@ mainMenu.forEach(element => {
 
   }, []);
   return (
-<menu>
+<menu  className='menu'>
   <img src={logo} alt=''/>
-<div>
-<ul id='main-menu'>
+  <div className="main">
+<ul id='main-menu' className='main-menu'>
     <Icon icon={<FaDelicious/>}/>
     <Icon icon={<FaShoppingCart/>}/>
     <Icon icon={<FaWallet/>}/>
@@ -37,8 +37,7 @@ mainMenu.forEach(element => {
   <Icon icon={<FaCog/>}/>
   <Icon icon={<FaSignOutAlt/>}/>
   </ul>
-</div>
-
+  </div>
 </menu>
   )
 }

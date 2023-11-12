@@ -1,43 +1,46 @@
-menu {
+.menu {
+    margin: 0;
     width: 100px;
     height: 100%;
-    background-color: #19162c;
+    background: #19162c;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, .4);
     position: sticky;
     top: 0;
-
-}  
-menu img {
+}
+.menu img {
     width: 40px;
     padding-top: 30px;
 }
-menu ul {
-    padding-top: 30px;
+.menu .main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
     width: 100%;
+    margin-left: -18px;
 }
-menu ul li {
-    list-style-type: none;
+.menu .main ul li {
+  list-style: none;
     position: relative;
-    width: 100%;
-    margin: 20px -25px;
+    /* width: 100%; */
+    text-align: center;
+    margin: 20px -2px;
 }
-menu ul li a{
+.menu .main ul li a {
     color: #8c8a95;
     font-size: 25px;
     text-decoration: none;
     transition: all 0.3s ease;
 }
-
-menu ul li a::before {
+.menu .main ul li a::before {
     position: absolute;
     /* content: ""; */
-    /* top: 5px; */
-    /* left: -10px; */
+    top: 5px;
+    left: -10px;
     top: 2.5px;
     left: 3.5px;
     width: 0px;
@@ -45,30 +48,26 @@ menu ul li a::before {
     background: #b1147d;
     border-radius: 50%;
 }
-menu ul li:hover a {
+.main ul li:hover a::before {
     color: #b1147d;
 }
-menu ul li:hover a::before{
+.main ul li.active a::before{
     width: 20px;
     transition: all 0.3s;
 }
 
-menu ul li.active a{
+.main ul li.active a{
     color: #b1147d;
 }
 
-menu ul li.active a::before{
-    width: 20px;
-    transition: all 0.3s;
-}
 .mini-menu {
     margin-top: auto;
 }
 
-@media screen and (max-width: 525px){
-    menu {
+@media only screen and (max-width: 525px){
+    .menu {
         min-width: 68px;
-        width: 68px;
+        /* width: 68px; */
         /* text-align: center; */
-    }
+     } 
 }

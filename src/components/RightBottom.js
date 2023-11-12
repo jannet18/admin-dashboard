@@ -6,7 +6,7 @@ function RightBottom() {
     <div className='right_bottom_card'>
         <div className="bottom_name">
         <h2>Top Seller</h2>
-        <a href="#view-more" className="view_more">View More</a>
+        <a href="#view-more">View More</a>
         </div>
         {
             TopSeller && TopSeller.map((seller, id) => (
@@ -17,7 +17,7 @@ function RightBottom() {
                 </div>
            
             <div className="top-seller_name">
-                            <p>{seller?.seller_name}<span>{seller?.username}</span></p>
+                <p>{seller?.seller_name}<span>{seller?.username}</span></p>
             </div>
             <a href="#btn" className="button-1 btn">Follow</a>
             </div>
