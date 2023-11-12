@@ -26,7 +26,7 @@
 .menu .main ul li {
   list-style: none;
     position: relative;
-    /* width: 100%; */
+    width: 100%;
     text-align: center;
     margin: 20px -2px;
 }

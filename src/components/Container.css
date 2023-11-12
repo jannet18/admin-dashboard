@@ -101,14 +101,19 @@
 .menu-container{
     position: absolute;
     top: 50px;
-    /* right: 10px; */
-    right: 300px;
+    right: 10px;
+    /* right: 200px; */
     background: #19162c;
     border-radius: .5em;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     z-index: 1;
     transform: translateX(300px);
 }
+
+.menu-container::translateY{
+    display: none;
+}
+
 .menu-container:after {
     position: absolute;
     content: '';
